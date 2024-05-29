@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Chapéu Seletor</title>
+    <style>
+        body {
+            background-color: #3E2F2F;
+            color: #F5E6C8;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #5A4B4B;
+            padding: 20px;
+            border-bottom: 2px solid #F5E6C8;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        form {
+            background-color: #6B5B5B;
+            border: 2px solid #F5E6C8;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+        h2 {
+            color: #F5E6C8;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .options div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-left: 10px;
+        }
+
+        button {
+            background-color: #F5E6C8;
+            color: #3E2F2F;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        button:hover {
+            background-color: #E5D3B3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responda as perguntas e descubra a sua casa</h1>
+    </header>
+    <section>
+        <form>
+            <div class="question">
+                <h2>O que você valoriza mais em si mesmo?</h2>
+                <div class="options">
+                    <div>
+                        <input type="radio" value="G" name="pergunta1" id="coragem"/>
+                        <label for="coragem">Coragem</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="S" name="pergunta1" id="ambicao"/>
+                        <label for="ambicao">Ambição</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="C" name="pergunta1" id="inteligencia"/>
+                        <label for="inteligencia">Inteligência</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="L" name="pergunta1" id="lealdade"/>
+                        <label for="lealdade">Lealdade</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Qual dessas qualidades é mais importante para você em um amigo?</h2>
+                <div class="options">
+                    <div>
+                        <input type="radio" value="G" name="pergunta2" id="determinacao"/>
+                        <label for="determinacao">Determinação</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="S" name="pergunta2" id="astucia"/>
+                        <label for="astucia">Astúcia</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="C" name="pergunta2" id="curiosidade"/>
+                        <label for="curiosidade">Curiosidade</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="L" name="pergunta2" id="honestidade"/>
+                        <label for="honestidade">Honestidade</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Se você pudesse escolher uma habilidade mágica para dominar rapidamente, qual seria?</h2>
+                <div class="options">
+                    <div>
+                        <input type="radio" value="G" name="pergunta3" id="protecao"/>
+                        <label for="protecao">Feitiços de proteção</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="S" name="pergunta3" id="manipulacao"/>
+                        <label for="manipulacao">Feitiços de manipulação mental</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="C" name="pergunta3" id="transformacao"/>
+                        <label for="transformacao">Feitiços de transformação</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="L" name="pergunta3" id="cura"/>
+                        <label for="cura">Feitiços de cura</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Em uma situação de crise, qual seria sua primeira reação?</h2>
+                <div class="options">
+                    <div>
+                        <input type="radio" value="G" name="pergunta4" id="agir"/>
+                        <label for="agir">Agir imediatamente, sem hesitar</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="S" name="pergunta4" id="avaliar"/>
+                        <label for="avaliar">Avaliar a situação e procurar uma vantagem</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="C" name="pergunta4" id="analisar"/>
+                        <label for="analisar">Analisar a situação com calma e buscar uma solução lógica</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="L" name="pergunta4" id="proteger"/>
+                        <label for="proteger">Proteger e cuidar dos outros antes de agir</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Como você prefere passar seu tempo livre?</h2>
+                <div class="options">
+                    <div>
+                        <input type="radio" value="G" name="pergunta5" id="esportes"/>
+                        <label for="esportes">Praticando esportes ou se envolvendo em atividades físicas</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="S" name="pergunta5" id="projetos"/>
+                        <label for="projetos">Planejando e executando projetos para alcançar objetivos pessoais</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="C" name="pergunta5" id="conhecimento"/>
+                        <label for="conhecimento">Explorando novos conhecimentos ou desenvolvendo habilidades criativas</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="L" name="pergunta5" id="amigos"/>
+                        <label for="amigos">Passando tempo com amigos e entes queridos, apreciando momentos de conexão e alegria</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" onclick="getFormData(event)">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
